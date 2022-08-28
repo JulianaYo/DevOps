@@ -19,7 +19,6 @@ echo "CREATE $DIRECTORY$ERRORLOG"
 
 tar --create --$ARCHIVETYPE --file $DIRECTORY/$ARCHIVEFILE $DIRNAME
 
-
 openssl enc -aes256 -base64 -in $DIRECTORY/$ARCHIVEFILE -out $DIRECTORY/$ARCHIVEFILE.enc
 
 echo "Backup finished"
