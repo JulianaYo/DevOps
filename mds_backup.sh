@@ -6,8 +6,7 @@ OUTPUTFILE=$3
 
 DIRECTORY="/Users/d.tsvetkova/Desktop/mds/devops/w1/"
 ERRORLOG="error.log"
-echo "BACKUP DIRECTORY IS $DIRECTORY"
-
+echo "Backup directory is $DIRECTORY"
 
 ARCHIVEFILE="$OUTPUTFILE.$ARCHIVETYPE"
 
@@ -15,7 +14,7 @@ echo "Backing up $DIRNAME to $DIRECTORY$ARCHIVEFILE"
 date
 
 touch $DIRECTORY$ERRORLOG
-echo "CREATE $DIRECTORY$ERRORLOG"
+echo "Create error.log $DIRECTORY$ERRORLOG"
 
 tar --create --$ARCHIVETYPE --file $DIRECTORY/$ARCHIVEFILE $DIRNAME
 
